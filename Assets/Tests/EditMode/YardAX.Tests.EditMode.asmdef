@@ -1,0 +1,9 @@
+{
+  "name": "YardAX.Tests.EditMode",
+  "rootNamespace": "YardAX.Tests",
+  "references": ["YardAX"],
+  "includePlatforms": ["Editor"],
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll"],
+  "defineConstraints": ["UNITY_INCLUDE_TESTS"]
+}

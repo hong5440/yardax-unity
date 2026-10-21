@@ -1,0 +1,2236 @@
+{
+ "note": "합성 데이터 — 시연용 가상 야드 일정입니다. 실제 일정·허가가 아닙니다.",
+ "demoDate": "2026-11-05",
+ "stageOrder": [
+  "절단",
+  "소조립",
+  "조립",
+  "선행의장",
+  "선행도장",
+  "PE",
+  "탑재"
+ ],
+ "scheduleHierarchy": [
+  "선표",
+  "대일정",
+  "중일정",
+  "소일정",
+  "블록 일정"
+ ],
+ "requiredPermits": [
+  {
+   "process": "블록 탑재",
+   "permits": [
+    "중량물 인양"
+   ]
+  },
+  {
+   "process": "하부 취부 용접",
+   "permits": [
+    "화기작업"
+   ]
+  },
+  {
+   "process": "대조립 용접",
+   "permits": [
+    "화기작업"
+   ]
+  },
+  {
+   "process": "배관 스풀 용접",
+   "permits": [
+    "화기작업"
+   ]
+  },
+  {
+   "process": "강재 절단",
+   "permits": [
+    "화기작업"
+   ]
+  },
+  {
+   "process": "탱크 내부 도장",
+   "permits": [
+    "밀폐공간 출입",
+    "도장작업"
+   ]
+  },
+  {
+   "process": "이중저 내부 검사",
+   "permits": [
+    "밀폐공간 출입"
+   ]
+  },
+  {
+   "process": "현문 족장 설치",
+   "permits": [
+    "고소작업"
+   ]
+  },
+  {
+   "process": "블록 운송",
+   "permits": [
+    "중량물 운송"
+   ]
+  }
+ ],
+ "blocks": [
+  {
+   "id": "E3",
+   "name": "E3 상부 선체 블록",
+   "weightTon": 480,
+   "sizeM": {
+    "l": 22,
+    "w": 14,
+    "h": 6
+   },
+   "cogM": {
+    "x": 0.4,
+    "y": 2.1,
+    "z": -0.8
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -9.5,
+     "zM": -5.5,
+     "swlTon": 192
+    },
+    {
+     "id": "L2",
+     "xM": 9.5,
+     "zM": -5.5,
+     "swlTon": 192
+    },
+    {
+     "id": "L3",
+     "xM": -9.5,
+     "zM": 5.5,
+     "swlTon": 192
+    },
+    {
+     "id": "L4",
+     "xM": 9.5,
+     "zM": 5.5,
+     "swlTon": 192
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-23",
+     "end": "2026-09-26",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-28",
+     "end": "2026-10-04",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-06",
+     "end": "2026-10-15",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-17",
+     "end": "2026-10-21",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-23",
+     "end": "2026-10-27",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-29",
+     "end": "2026-11-01",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-03",
+     "end": "2026-11-07",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "E1",
+   "name": "E1 선수 블록",
+   "weightTon": 420,
+   "sizeM": {
+    "l": 20,
+    "w": 13,
+    "h": 6
+   },
+   "cogM": {
+    "x": 0,
+    "y": 2.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -8.5,
+     "zM": -5.0,
+     "swlTon": 168
+    },
+    {
+     "id": "L2",
+     "xM": 8.5,
+     "zM": -5.0,
+     "swlTon": 168
+    },
+    {
+     "id": "L3",
+     "xM": -8.5,
+     "zM": 5.0,
+     "swlTon": 168
+    },
+    {
+     "id": "L4",
+     "xM": 8.5,
+     "zM": 5.0,
+     "swlTon": 168
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-08-27",
+     "end": "2026-08-30",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-01",
+     "end": "2026-09-07",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-09-09",
+     "end": "2026-09-18",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-09-20",
+     "end": "2026-09-24",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-09-26",
+     "end": "2026-09-30",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-02",
+     "end": "2026-10-05",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-10-07",
+     "end": "2026-10-09",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "E2",
+   "name": "E2 선미 블록",
+   "weightTon": 450,
+   "sizeM": {
+    "l": 21,
+    "w": 14,
+    "h": 6
+   },
+   "cogM": {
+    "x": 0,
+    "y": 2.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -9.0,
+     "zM": -5.5,
+     "swlTon": 180
+    },
+    {
+     "id": "L2",
+     "xM": 9.0,
+     "zM": -5.5,
+     "swlTon": 180
+    },
+    {
+     "id": "L3",
+     "xM": -9.0,
+     "zM": 5.5,
+     "swlTon": 180
+    },
+    {
+     "id": "L4",
+     "xM": 9.0,
+     "zM": 5.5,
+     "swlTon": 180
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-08",
+     "end": "2026-09-11",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-13",
+     "end": "2026-09-19",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-09-21",
+     "end": "2026-09-30",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-02",
+     "end": "2026-10-06",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-08",
+     "end": "2026-10-12",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-14",
+     "end": "2026-10-17",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-10-19",
+     "end": "2026-10-21",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "E4",
+   "name": "E4 상부 블록",
+   "weightTon": 460,
+   "sizeM": {
+    "l": 22,
+    "w": 14,
+    "h": 6
+   },
+   "cogM": {
+    "x": 0,
+    "y": 2.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -9.5,
+     "zM": -5.5,
+     "swlTon": 184
+    },
+    {
+     "id": "L2",
+     "xM": 9.5,
+     "zM": -5.5,
+     "swlTon": 184
+    },
+    {
+     "id": "L3",
+     "xM": -9.5,
+     "zM": 5.5,
+     "swlTon": 184
+    },
+    {
+     "id": "L4",
+     "xM": 9.5,
+     "zM": 5.5,
+     "swlTon": 184
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-28",
+     "end": "2026-10-01",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-03",
+     "end": "2026-10-09",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-11",
+     "end": "2026-10-20",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-22",
+     "end": "2026-10-26",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-28",
+     "end": "2026-11-01",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-03",
+     "end": "2026-11-06",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-08",
+     "end": "2026-11-10",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "E5",
+   "name": "E5 상부 블록",
+   "weightTon": 440,
+   "sizeM": {
+    "l": 22,
+    "w": 14,
+    "h": 6
+   },
+   "cogM": {
+    "x": 0,
+    "y": 2.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -9.5,
+     "zM": -5.5,
+     "swlTon": 176
+    },
+    {
+     "id": "L2",
+     "xM": 9.5,
+     "zM": -5.5,
+     "swlTon": 176
+    },
+    {
+     "id": "L3",
+     "xM": -9.5,
+     "zM": 5.5,
+     "swlTon": 176
+    },
+    {
+     "id": "L4",
+     "xM": 9.5,
+     "zM": 5.5,
+     "swlTon": 176
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-06",
+     "end": "2026-10-09",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-11",
+     "end": "2026-10-17",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-19",
+     "end": "2026-10-28",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-30",
+     "end": "2026-11-03",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-05",
+     "end": "2026-11-09",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-11",
+     "end": "2026-11-14",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-16",
+     "end": "2026-11-18",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "E6",
+   "name": "E6 거주구 블록",
+   "weightTon": 380,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 9
+   },
+   "cogM": {
+    "x": 0,
+    "y": 3.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 152
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 152
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 152
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 152
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-14",
+     "end": "2026-10-17",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-19",
+     "end": "2026-10-25",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-27",
+     "end": "2026-11-05",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-11-07",
+     "end": "2026-11-11",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-13",
+     "end": "2026-11-17",
+     "facilityId": 22
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-19",
+     "end": "2026-11-22",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-24",
+     "end": "2026-11-26",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "D1",
+   "name": "D1 이중저 블록",
+   "weightTon": 300,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 3.2
+   },
+   "cogM": {
+    "x": 0,
+    "y": 1.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 120
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 120
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 120
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 120
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-08-31",
+     "end": "2026-09-03",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-05",
+     "end": "2026-09-11",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-09-13",
+     "end": "2026-09-22",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-09-24",
+     "end": "2026-09-28",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-09-30",
+     "end": "2026-10-04",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-06",
+     "end": "2026-10-09",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-10-11",
+     "end": "2026-10-13",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "D2",
+   "name": "D2 이중저 블록",
+   "weightTon": 310,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 3.2
+   },
+   "cogM": {
+    "x": 0,
+    "y": 1.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 124
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 124
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 124
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 124
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-12",
+     "end": "2026-09-15",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-17",
+     "end": "2026-09-23",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-09-25",
+     "end": "2026-10-04",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-06",
+     "end": "2026-10-10",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-12",
+     "end": "2026-10-16",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-18",
+     "end": "2026-10-21",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-10-23",
+     "end": "2026-10-25",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "D3",
+   "name": "D3 이중저 블록",
+   "weightTon": 305,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 3.2
+   },
+   "cogM": {
+    "x": 0,
+    "y": 1.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 122
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 122
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 122
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 122
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-22",
+     "end": "2026-09-25",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-27",
+     "end": "2026-10-03",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-05",
+     "end": "2026-10-14",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-16",
+     "end": "2026-10-20",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-22",
+     "end": "2026-10-26",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-28",
+     "end": "2026-10-31",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-02",
+     "end": "2026-11-04",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "D4",
+   "name": "D4 이중저 블록",
+   "weightTon": 315,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 3.2
+   },
+   "cogM": {
+    "x": 0,
+    "y": 1.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 126
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 126
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 126
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 126
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-02",
+     "end": "2026-10-05",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-07",
+     "end": "2026-10-13",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-15",
+     "end": "2026-10-24",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-26",
+     "end": "2026-10-30",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-01",
+     "end": "2026-11-05",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-07",
+     "end": "2026-11-10",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-12",
+     "end": "2026-11-14",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "D5",
+   "name": "D5 이중저 블록",
+   "weightTon": 300,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 3.2
+   },
+   "cogM": {
+    "x": 0,
+    "y": 1.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 120
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 120
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 120
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 120
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-10",
+     "end": "2026-10-13",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-15",
+     "end": "2026-10-21",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-23",
+     "end": "2026-11-01",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-11-03",
+     "end": "2026-11-07",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-09",
+     "end": "2026-11-13",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-15",
+     "end": "2026-11-18",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-20",
+     "end": "2026-11-22",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "D6",
+   "name": "D6 이중저 블록",
+   "weightTon": 310,
+   "sizeM": {
+    "l": 18,
+    "w": 16,
+    "h": 3.2
+   },
+   "cogM": {
+    "x": 0,
+    "y": 1.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -7.5,
+     "zM": -6.5,
+     "swlTon": 124
+    },
+    {
+     "id": "L2",
+     "xM": 7.5,
+     "zM": -6.5,
+     "swlTon": 124
+    },
+    {
+     "id": "L3",
+     "xM": -7.5,
+     "zM": 6.5,
+     "swlTon": 124
+    },
+    {
+     "id": "L4",
+     "xM": 7.5,
+     "zM": 6.5,
+     "swlTon": 124
+    }
+   ],
+   "needsTurnover": true,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-20",
+     "end": "2026-10-23",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-25",
+     "end": "2026-10-31",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-11-02",
+     "end": "2026-11-11",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-11-13",
+     "end": "2026-11-17",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-19",
+     "end": "2026-11-23",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-25",
+     "end": "2026-11-28",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-30",
+     "end": "2026-12-02",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "T1",
+   "name": "T1 LNG 탱크 블록",
+   "weightTon": 255,
+   "sizeM": {
+    "l": 16,
+    "w": 12,
+    "h": 9
+   },
+   "cogM": {
+    "x": 0,
+    "y": 3.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -6.5,
+     "zM": -4.5,
+     "swlTon": 102
+    },
+    {
+     "id": "L2",
+     "xM": 6.5,
+     "zM": -4.5,
+     "swlTon": 102
+    },
+    {
+     "id": "L3",
+     "xM": -6.5,
+     "zM": 4.5,
+     "swlTon": 102
+    },
+    {
+     "id": "L4",
+     "xM": 6.5,
+     "zM": 4.5,
+     "swlTon": 102
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-18",
+     "end": "2026-09-21",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-09-23",
+     "end": "2026-09-29",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-01",
+     "end": "2026-10-10",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-12",
+     "end": "2026-10-16",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-18",
+     "end": "2026-10-22",
+     "facilityId": 22
+    },
+    {
+     "stage": "PE",
+     "start": "2026-10-24",
+     "end": "2026-10-27",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-10-29",
+     "end": "2026-10-31",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "T2",
+   "name": "T2 LNG 탱크 블록",
+   "weightTon": 260,
+   "sizeM": {
+    "l": 16,
+    "w": 12,
+    "h": 9
+   },
+   "cogM": {
+    "x": 0,
+    "y": 3.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -6.5,
+     "zM": -4.5,
+     "swlTon": 104
+    },
+    {
+     "id": "L2",
+     "xM": 6.5,
+     "zM": -4.5,
+     "swlTon": 104
+    },
+    {
+     "id": "L3",
+     "xM": -6.5,
+     "zM": 4.5,
+     "swlTon": 104
+    },
+    {
+     "id": "L4",
+     "xM": 6.5,
+     "zM": 4.5,
+     "swlTon": 104
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-09-26",
+     "end": "2026-09-29",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-01",
+     "end": "2026-10-07",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-09",
+     "end": "2026-10-18",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-20",
+     "end": "2026-10-24",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-10-26",
+     "end": "2026-10-30",
+     "facilityId": 22
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-01",
+     "end": "2026-11-04",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-06",
+     "end": "2026-11-08",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "T3",
+   "name": "T3 LNG 탱크 블록",
+   "weightTon": 258,
+   "sizeM": {
+    "l": 16,
+    "w": 12,
+    "h": 9
+   },
+   "cogM": {
+    "x": 0,
+    "y": 3.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -6.5,
+     "zM": -4.5,
+     "swlTon": 103
+    },
+    {
+     "id": "L2",
+     "xM": 6.5,
+     "zM": -4.5,
+     "swlTon": 103
+    },
+    {
+     "id": "L3",
+     "xM": -6.5,
+     "zM": 4.5,
+     "swlTon": 103
+    },
+    {
+     "id": "L4",
+     "xM": 6.5,
+     "zM": 4.5,
+     "swlTon": 103
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-04",
+     "end": "2026-10-07",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-09",
+     "end": "2026-10-15",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-17",
+     "end": "2026-10-26",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-10-28",
+     "end": "2026-11-01",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-03",
+     "end": "2026-11-07",
+     "facilityId": 22
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-09",
+     "end": "2026-11-12",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-14",
+     "end": "2026-11-16",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "T4",
+   "name": "T4 LNG 탱크 블록",
+   "weightTon": 262,
+   "sizeM": {
+    "l": 16,
+    "w": 12,
+    "h": 9
+   },
+   "cogM": {
+    "x": 0,
+    "y": 3.1,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -6.5,
+     "zM": -4.5,
+     "swlTon": 104
+    },
+    {
+     "id": "L2",
+     "xM": 6.5,
+     "zM": -4.5,
+     "swlTon": 104
+    },
+    {
+     "id": "L3",
+     "xM": -6.5,
+     "zM": 4.5,
+     "swlTon": 104
+    },
+    {
+     "id": "L4",
+     "xM": 6.5,
+     "zM": 4.5,
+     "swlTon": 104
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-12",
+     "end": "2026-10-15",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-17",
+     "end": "2026-10-23",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-10-25",
+     "end": "2026-11-03",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-11-05",
+     "end": "2026-11-09",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-11",
+     "end": "2026-11-15",
+     "facilityId": 22
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-17",
+     "end": "2026-11-20",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-11-22",
+     "end": "2026-11-24",
+     "facilityId": 2
+    }
+   ]
+  },
+  {
+   "id": "B1",
+   "name": "B1 선수 벌브 블록",
+   "weightTon": 190,
+   "sizeM": {
+    "l": 12,
+    "w": 10,
+    "h": 7
+   },
+   "cogM": {
+    "x": 0,
+    "y": 2.4,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -4.5,
+     "zM": -3.5,
+     "swlTon": 76
+    },
+    {
+     "id": "L2",
+     "xM": 4.5,
+     "zM": -3.5,
+     "swlTon": 76
+    },
+    {
+     "id": "L3",
+     "xM": -4.5,
+     "zM": 3.5,
+     "swlTon": 76
+    },
+    {
+     "id": "L4",
+     "xM": 4.5,
+     "zM": 3.5,
+     "swlTon": 76
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-24",
+     "end": "2026-10-27",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-10-29",
+     "end": "2026-11-04",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-11-06",
+     "end": "2026-11-15",
+     "facilityId": 13
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-11-17",
+     "end": "2026-11-21",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-23",
+     "end": "2026-11-27",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-11-29",
+     "end": "2026-12-02",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-12-04",
+     "end": "2026-12-06",
+     "facilityId": 1
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "name": "B2 스턴 프레임 블록",
+   "weightTon": 210,
+   "sizeM": {
+    "l": 13,
+    "w": 11,
+    "h": 7
+   },
+   "cogM": {
+    "x": 0,
+    "y": 2.4,
+    "z": 0
+   },
+   "lugs": [
+    {
+     "id": "L1",
+     "xM": -5.0,
+     "zM": -4.0,
+     "swlTon": 84
+    },
+    {
+     "id": "L2",
+     "xM": 5.0,
+     "zM": -4.0,
+     "swlTon": 84
+    },
+    {
+     "id": "L3",
+     "xM": -5.0,
+     "zM": 4.0,
+     "swlTon": 84
+    },
+    {
+     "id": "L4",
+     "xM": 5.0,
+     "zM": 4.0,
+     "swlTon": 84
+    }
+   ],
+   "needsTurnover": false,
+   "stages": [
+    {
+     "stage": "절단",
+     "start": "2026-10-30",
+     "end": "2026-11-02",
+     "facilityId": 11
+    },
+    {
+     "stage": "소조립",
+     "start": "2026-11-04",
+     "end": "2026-11-10",
+     "facilityId": 6
+    },
+    {
+     "stage": "조립",
+     "start": "2026-11-12",
+     "end": "2026-11-21",
+     "facilityId": 12
+    },
+    {
+     "stage": "선행의장",
+     "start": "2026-11-23",
+     "end": "2026-11-27",
+     "facilityId": 5
+    },
+    {
+     "stage": "선행도장",
+     "start": "2026-11-29",
+     "end": "2026-12-03",
+     "facilityId": 10
+    },
+    {
+     "stage": "PE",
+     "start": "2026-12-05",
+     "end": "2026-12-08",
+     "facilityId": 15
+    },
+    {
+     "stage": "탑재",
+     "start": "2026-12-10",
+     "end": "2026-12-12",
+     "facilityId": 1
+    }
+   ]
+  }
+ ],
+ "workOrders": [
+  {
+   "id": "WO-1101",
+   "date": "2026-11-05",
+   "process": "블록 탑재",
+   "facilityId": 1,
+   "blockId": "E3",
+   "start": "14:00",
+   "end": "16:00",
+   "crew": {
+    "count": 6,
+    "languages": [
+     "ko",
+     "vi"
+    ],
+    "newHires": 1
+   },
+   "equipment": [
+    "900톤 골리앗 크레인",
+    "트랜스포터"
+   ],
+   "permits": [
+    "중량물 인양"
+   ],
+   "envFactors": [
+    "풍속",
+    "시계"
+   ],
+   "expectedRisks": [
+    "낙하",
+    "협착"
+   ],
+   "notes": "E3 블록 탑재 — 하부 통제 필수, 신호수 2명."
+  },
+  {
+   "id": "WO-1102",
+   "date": "2026-11-05",
+   "process": "하부 취부 용접",
+   "facilityId": 1,
+   "blockId": "E3",
+   "start": "14:00",
+   "end": "16:00",
+   "crew": {
+    "count": 4,
+    "languages": [
+     "ko"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "CO2 용접기"
+   ],
+   "permits": [],
+   "envFactors": [
+    "풍속"
+   ],
+   "expectedRisks": [
+    "화재·폭발",
+    "낙하"
+   ],
+   "notes": "탑재 블록 하부 론지 취부 — 인양 작업과 시간 겹침. ※화기작업 허가 미발급(합성 시나리오)."
+  },
+  {
+   "id": "WO-1103",
+   "date": "2026-11-05",
+   "process": "이중저 내부 검사",
+   "facilityId": 1,
+   "blockId": "D7",
+   "start": "09:00",
+   "end": "10:00",
+   "crew": {
+    "count": 2,
+    "languages": [
+     "ko"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "산소측정기",
+    "송기마스크"
+   ],
+   "permits": [
+    "밀폐공간 출입"
+   ],
+   "envFactors": [
+    "산소농도"
+   ],
+   "expectedRisks": [
+    "질식"
+   ],
+   "notes": "맨홀 2개소 개방, 외부 감시인 배치."
+  },
+  {
+   "id": "WO-1104",
+   "date": "2026-11-05",
+   "process": "대조립 용접",
+   "facilityId": 13,
+   "blockId": "D7",
+   "start": "08:00",
+   "end": "17:00",
+   "crew": {
+    "count": 10,
+    "languages": [
+     "ko",
+     "vi",
+     "ne"
+    ],
+    "newHires": 2
+   },
+   "equipment": [
+    "CO2 용접기",
+    "천장크레인"
+   ],
+   "permits": [
+    "화기작업"
+   ],
+   "envFactors": [],
+   "expectedRisks": [
+    "화재·폭발",
+    "협착"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "WO-1105",
+   "date": "2026-11-05",
+   "process": "대조립 취부",
+   "facilityId": 12,
+   "blockId": "T2",
+   "start": "08:00",
+   "end": "17:00",
+   "crew": {
+    "count": 8,
+    "languages": [
+     "ko",
+     "uz"
+    ],
+    "newHires": 1
+   },
+   "equipment": [
+    "천장크레인",
+    "유압잭"
+   ],
+   "permits": [],
+   "envFactors": [],
+   "expectedRisks": [
+    "협착",
+    "전도"
+   ],
+   "notes": "T2 격벽 취부."
+  },
+  {
+   "id": "WO-1106",
+   "date": "2026-11-05",
+   "process": "강재 절단",
+   "facilityId": 11,
+   "blockId": "",
+   "start": "08:00",
+   "end": "17:00",
+   "crew": {
+    "count": 6,
+    "languages": [
+     "ko"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "플라즈마 절단기"
+   ],
+   "permits": [
+    "화기작업"
+   ],
+   "envFactors": [
+    "흄"
+   ],
+   "expectedRisks": [
+    "화재·폭발",
+    "절단·화상"
+   ],
+   "notes": "차기 블록 강재 절단."
+  },
+  {
+   "id": "WO-1107",
+   "date": "2026-11-05",
+   "process": "탱크 내부 도장",
+   "facilityId": 22,
+   "blockId": "",
+   "start": "10:00",
+   "end": "12:00",
+   "crew": {
+    "count": 4,
+    "languages": [
+     "vi"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "에어리스 도장기",
+    "환기팬"
+   ],
+   "permits": [
+    "밀폐공간 출입",
+    "도장작업"
+   ],
+   "envFactors": [
+    "유증기",
+    "산소농도"
+   ],
+   "expectedRisks": [
+    "질식",
+    "화재·폭발"
+   ],
+   "notes": "송기마스크 착용, 인접 화기 통제."
+  },
+  {
+   "id": "WO-1108",
+   "date": "2026-11-05",
+   "process": "배관 스풀 용접",
+   "facilityId": 22,
+   "blockId": "",
+   "start": "10:00",
+   "end": "12:00",
+   "crew": {
+    "count": 3,
+    "languages": [
+     "ko"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "TIG 용접기"
+   ],
+   "permits": [
+    "화기작업"
+   ],
+   "envFactors": [],
+   "expectedRisks": [
+    "화재·폭발"
+   ],
+   "notes": "도장 구역 인접 — 점화원 간섭 주의."
+  },
+  {
+   "id": "WO-1109",
+   "date": "2026-11-05",
+   "process": "현문 족장 설치",
+   "facilityId": 9,
+   "blockId": "",
+   "start": "13:00",
+   "end": "15:00",
+   "crew": {
+    "count": 5,
+    "languages": [
+     "ko",
+     "ne"
+    ],
+    "newHires": 1
+   },
+   "equipment": [
+    "비계 자재"
+   ],
+   "permits": [],
+   "envFactors": [
+    "풍속"
+   ],
+   "expectedRisks": [
+    "추락",
+    "낙하"
+   ],
+   "notes": "계류선 상부 족장. ※고소작업 허가 미발급(합성 시나리오)."
+  },
+  {
+   "id": "WO-1110",
+   "date": "2026-11-05",
+   "process": "하부 배관 설치",
+   "facilityId": 9,
+   "blockId": "",
+   "start": "13:00",
+   "end": "15:00",
+   "crew": {
+    "count": 4,
+    "languages": [
+     "vi"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "체인블록"
+   ],
+   "permits": [],
+   "envFactors": [],
+   "expectedRisks": [
+    "낙하",
+    "협착"
+   ],
+   "notes": "고소작업 하부 — 낙하물 간섭 주의."
+  },
+  {
+   "id": "WO-1111",
+   "date": "2026-11-05",
+   "process": "자재 불출",
+   "facilityId": 15,
+   "blockId": "",
+   "start": "07:00",
+   "end": "12:00",
+   "crew": {
+    "count": 4,
+    "languages": [
+     "ko"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "지게차",
+    "트랜스포터"
+   ],
+   "permits": [],
+   "envFactors": [],
+   "expectedRisks": [
+    "충돌",
+    "전도"
+   ],
+   "notes": "보행 통제선 설치."
+  },
+  {
+   "id": "WO-1112",
+   "date": "2026-11-05",
+   "process": "블록 운송",
+   "facilityId": 15,
+   "blockId": "E3",
+   "start": "13:00",
+   "end": "14:00",
+   "crew": {
+    "count": 3,
+    "languages": [
+     "ko"
+    ],
+    "newHires": 0
+   },
+   "equipment": [
+    "트랜스포터"
+   ],
+   "permits": [
+    "중량물 운송"
+   ],
+   "envFactors": [
+    "풍속"
+   ],
+   "expectedRisks": [
+    "충돌"
+   ],
+   "notes": "15번 적치장 → 1도크, 신호수 선도."
+  }
+ ],
+ "environment": [
+  {
+   "date": "2026-11-05",
+   "hour": 6,
+   "tempC": 8.5,
+   "humidity": 57,
+   "windMs": 3.0,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 7,
+   "tempC": 9.3,
+   "humidity": 57,
+   "windMs": 3.4,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 8,
+   "tempC": 10.1,
+   "humidity": 57,
+   "windMs": 3.7,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 9,
+   "tempC": 10.9,
+   "humidity": 55,
+   "windMs": 4.0,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 10,
+   "tempC": 11.8,
+   "humidity": 55,
+   "windMs": 4.4,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 11,
+   "tempC": 12.6,
+   "humidity": 55,
+   "windMs": 4.8,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 12,
+   "tempC": 13.4,
+   "humidity": 55,
+   "windMs": 5.1,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 13,
+   "tempC": 14.2,
+   "humidity": 55,
+   "windMs": 5.4,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 14,
+   "tempC": 15.0,
+   "humidity": 55,
+   "windMs": 5.8,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 15,
+   "tempC": 14.1,
+   "humidity": 55,
+   "windMs": 6.2,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 16,
+   "tempC": 13.2,
+   "humidity": 55,
+   "windMs": 5.8,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 17,
+   "tempC": 12.3,
+   "humidity": 55,
+   "windMs": 5.4,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 18,
+   "tempC": 11.4,
+   "humidity": 55,
+   "windMs": 5.0,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 19,
+   "tempC": 10.5,
+   "humidity": 55,
+   "windMs": 4.6,
+   "rain": false
+  },
+  {
+   "date": "2026-11-05",
+   "hour": 20,
+   "tempC": 9.6,
+   "humidity": 55,
+   "windMs": 4.2,
+   "rain": false
+  }
+ ],
+ "processRisks": [
+  {
+   "process": "블록 탑재",
+   "baseLevel": 3,
+   "risks": [
+    "낙하",
+    "협착",
+    "충돌"
+   ]
+  },
+  {
+   "process": "하부 취부 용접",
+   "baseLevel": 2,
+   "risks": [
+    "화재·폭발",
+    "낙하"
+   ]
+  },
+  {
+   "process": "탱크 내부 도장",
+   "baseLevel": 3,
+   "risks": [
+    "질식",
+    "화재·폭발"
+   ]
+  },
+  {
+   "process": "이중저 내부 검사",
+   "baseLevel": 3,
+   "risks": [
+    "질식"
+   ]
+  },
+  {
+   "process": "현문 족장 설치",
+   "baseLevel": 2,
+   "risks": [
+    "추락",
+    "낙하"
+   ]
+  },
+  {
+   "process": "강재 절단",
+   "baseLevel": 2,
+   "risks": [
+    "화재·폭발",
+    "절단·화상"
+   ]
+  },
+  {
+   "process": "블록 운송",
+   "baseLevel": 2,
+   "risks": [
+    "충돌"
+   ]
+  },
+  {
+   "process": "자재 불출",
+   "baseLevel": 1,
+   "risks": [
+    "충돌",
+    "전도"
+   ]
+  },
+  {
+   "process": "대조립 용접",
+   "baseLevel": 2,
+   "risks": [
+    "화재·폭발",
+    "협착"
+   ]
+  },
+  {
+   "process": "대조립 취부",
+   "baseLevel": 1,
+   "risks": [
+    "협착",
+    "전도"
+   ]
+  },
+  {
+   "process": "하부 배관 설치",
+   "baseLevel": 1,
+   "risks": [
+    "낙하",
+    "협착"
+   ]
+  },
+  {
+   "process": "배관 스풀 용접",
+   "baseLevel": 2,
+   "risks": [
+    "화재·폭발"
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "id": "CT-01",
+   "date": "2026-11-05",
+   "facilityId": 1,
+   "workOrderIds": [
+    "WO-1101",
+    "WO-1102"
+   ],
+   "startH": 14,
+   "endH": 16,
+   "reason": "크레인 하중 하부 화기작업 — 낙하물·불티 간섭"
+  },
+  {
+   "id": "CT-02",
+   "date": "2026-11-05",
+   "facilityId": 22,
+   "workOrderIds": [
+    "WO-1107",
+    "WO-1108"
+   ],
+   "startH": 10,
+   "endH": 12,
+   "reason": "밀폐 도장 유증기 인접 화기작업 — 점화원 간섭"
+  },
+  {
+   "id": "CT-03",
+   "date": "2026-11-05",
+   "facilityId": 9,
+   "workOrderIds": [
+    "WO-1109",
+    "WO-1110"
+   ],
+   "startH": 13,
+   "endH": 15,
+   "reason": "고소작업 하부 작업 — 낙하물 간섭"
+  }
+ ]
+}

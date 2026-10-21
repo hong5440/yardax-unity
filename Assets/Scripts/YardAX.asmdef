@@ -1,0 +1,6 @@
+{
+  "name": "YardAX",
+  "rootNamespace": "YardAX",
+  "references": ["Unity.InputSystem"],
+  "autoReferenced": true
+}
