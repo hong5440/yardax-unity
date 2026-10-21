@@ -37,7 +37,7 @@ namespace YardAX.Performance
             if (kb.nKey.wasPressedThisFrame)
             {
                 if (kb.shiftKey.isPressed) PresenterNotes = !PresenterNotes;
-                else Go(Step + 1);
+                else if (!YardAX.Schedule.E3StoryDirector.Active || YardAX.Schedule.E3StoryDirector.InFpv) Go(Step + 1);
             }
             if (kb.bKey.wasPressedThisFrame) Go(1);
         }

@@ -1,8 +1,8 @@
-# YardAX Unity — 크레인 디지털 트윈 (CLAUDE.md 초안)
+# YardAX Unity — 크레인 디지털 트윈
 
-> **상태: 초안.** 이 세션에는 Unity 프로젝트(Assets/)가 없어 `Assets/Scripts` 스캔을
-> 아직 수행하지 못했다. 프로젝트가 연결되면 "기존 코드 구조" 절의 TODO를 실제
-> 클래스명·책임으로 채우고 이 머리말을 제거할 것.
+> 기존 타워크레인 데모 코드(별도 PC)는 **아직 이 저장소로 이관되지 않았다.**
+> 이관되면 어댑터로 아래 인터페이스에 연결한다(절대 규칙 2). 그 전까지
+> 타워(tower-1)는 Yard Hub LIVE 연동 대상 식별자로만 존재한다.
 
 한화오션 거제사업장 **1도크 골리앗 크레인(디지털) + 타워크레인(실물 모형 연동)**
 Unity 시뮬레이터. 웹 관제(아차사고 레이더)와 **Yard Hub(WebSocket, docs/protocol.md)**
@@ -31,23 +31,22 @@ Unity 시뮬레이터. 웹 관제(아차사고 레이더)와 **Yard Hub(WebSocke
    - Linux: `~/.config/unity3d/Editor.log`
    `CompilationPipeline` 오류가 없는지, 신규 asmdef가 올바로 묶였는지 확인.
 
-## 기존 코드 구조 (스캔 후 채울 것 — TODO)
+## 코드 구조 (현재 구현)
 
-`Assets/Scripts`에서 아래 책임을 가진 기존 클래스를 찾아 기록한다:
-
-| 책임 | 기존 클래스 (TODO) | 비고 |
+| 책임 | 클래스 | 위치 |
 |---|---|---|
-| 크레인 상태 (`CraneState`) | ? | `ICraneState` 추출 대상 |
-| 예상 경로 계산 | ? | 골리앗은 직선 경로라 더 단순 |
-| Swept Area 표시 | ? | `ISweptAreaProvider` 추출 대상 |
-| 검증 (지시→조작→움직임) | ? | 골리앗 축 추가 지점 |
-| 경고/이벤트 타임라인 | ? | 차단 기록 재사용 |
-| 명령 수신 (TCP/JSON) | ? | `"crane"` 필드·골리앗 축 추가 지점 |
-| 입력 라우팅 | ? | `OperatorInputRouter` 존재 여부 확인 |
-| 탐색 이동 (Explore Mode) | ? | 1인칭 퍼포먼스·측정 모드 재사용 (F-wave) |
-| 카메라 전환 (1·3인칭) | ? | 관제→1인칭 전환 연출 접점 |
-| 위험 HUD | ? | After HUD 토대, 끔/켬 스위치 |
-| 작업자 위험 감지 | ? | 체류 판정·차단 대기·측정 지표 |
+| 축 정의·리그·상태·Swept 인터페이스 | `CraneAxis`, `ICraneRig`, `ICraneState`, `ISweptAreaProvider` | `Core/` |
+| 설정 | `GoliathCraneConfig`, `TransporterConfig`, SO들 | `Config/`, `Schedule/` |
+| 골리앗 리그·구동 | `GoliathRig`, `AxisMotor`(순수), `GoliathController`, `GoliathState` | `Goliath/` |
+| 턴오버 | `TurnoverSequence`, `TurnoverMath`(순수) | `Goliath/` |
+| Swept Area | `SweptGeometry`(순수), `GoliathSweptArea` | `Goliath/`, `Viz/` |
+| 입력 라우팅·차단 | `OperatorInputRouter`, `IRiskGate`, `GoliathRiskGates`, `CommandParser` | `Safety/` |
+| 작업자·타임라인 | `WorkerRegistry`, `WarningTimeline` | `Safety/` |
+| Yard Hub | `YardHubClient` (SIM/LIVE·재접속·heartbeat·interlock) | `Net/` |
+| 투영·발표 | `ProjectionCamera`(레이어 30), `PresentationMode`+`ScenePreset` | `Viz/` |
+| 1인칭 퍼포먼스 (F) | `FirstPersonRig`, `WorkerPath`, `PerformanceSequencer`, `CommandRecording`, `WorkerHud`, `PassCountdown`(순수), `PerformanceAudio`, `MeasurementMode`+`DwellTimer`(순수), `SplitScreen` | `Performance/` |
+| 일정·작업 액티브 (W) | `ScheduleRepository`, `ScheduleBoardView`, `WorkActiveScreen`, `RiskRuleEngine`(순수), `GuidelineGenerator`, `TransporterController`+`TransporterRisk`(순수), `ProcessSceneManager`, `E3StoryDirector` | `Data/`, `Schedule/` |
+| 씬 생성 메뉴 | Create Goliath Crane / Worker Path / Process Scenes | `Assets/Editor/YardAX/` |
 
 ## 폴더 구조 (목표)
 

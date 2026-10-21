@@ -1,0 +1,29 @@
+{
+  "note": "시연 모드 'E3 블록 이야기' — 단계별 카메라·활성 장면·우측 카드. N 키 진행.",
+  "steps": [
+    {"title": "① E3의 7단계", "scene": "gantt",
+     "cameraPos": [0, 60, -80], "cameraEuler": [35, 0, 0],
+     "card": "블록 일정 바에서 E3 — 절단부터 탑재까지 7단계. 오늘은 탑재일입니다."},
+    {"title": "② 오늘 작업 보드", "scene": "board",
+     "cameraPos": [0, 60, -80], "cameraEuler": [35, 0, 0],
+     "card": "작업지시 12건 — AI가 간섭 3건과 허가 누락 2건을 미리 표시합니다."},
+    {"title": "③ 트랜스포터 운송", "scene": "transporter",
+     "cameraPos": [-40, 40, -60], "cameraEuler": [38, 20, 0],
+     "card": "15번 PE장 → 1도크. 속도에 비례한 위험 띠, 사각지대, 보행 교차 경고."},
+    {"title": "④ E3 탑재 + AI 지침", "scene": "active_e3",
+     "cameraPos": [25, 30, -45], "cameraEuler": [30, -15, 0],
+     "card": "골리앗이 E3를 들어 올립니다. 우측 AI 작업안전지침 — 간섭·허가·환경이 근거입니다."},
+    {"title": "⑤ 실물 크레인 연동", "scene": "live",
+     "cameraPos": [25, 30, -45], "cameraEuler": [30, -15, 0],
+     "card": "LIVE 모드 — 실물 검증은 타워크레인으로 수행. 차단된 입력은 모형도 멈춥니다."},
+    {"title": "⑥ 하부 작업자 1인칭", "scene": "fpv",
+     "cameraPos": [0, 0, 0], "cameraEuler": [0, 0, 0],
+     "card": "하중 아래 작업자의 눈 — Before/After로 HUD의 차이를 보여줍니다."},
+    {"title": "⑦ 다른 공정 장면", "scene": "processes",
+     "cameraPos": [200, 35, -95], "cameraEuler": [30, 0, 0],
+     "card": "절단·소조립·조립·선행의장·선행도장·안벽의장 — 같은 데이터, 같은 안전 규칙."},
+    {"title": "⑧ 마무리", "scene": "finale",
+     "cameraPos": [0, 80, -120], "cameraEuler": [32, 0, 0],
+     "card": "말하면 그려지고, 위험하면 멈춥니다 — YardAX."}
+  ]
+}

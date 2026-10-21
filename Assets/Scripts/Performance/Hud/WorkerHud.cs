@@ -103,9 +103,10 @@ namespace YardAX.Performance.Hud
         void OnGUI() // 화면 밖 방향 화살표
         {
             if (!HudOn || rig == null || rig.cam == null || controller == null) return;
-            var loadWorld = new Vector3(0, 0, controller.State.GetPosition(CraneAxis.GANTRY));
-            var vp = rig.cam.WorldToViewportPoint(
-                controller.transform.TransformPoint(loadWorld));
+            var rigComp = controller.GetComponent<GoliathRig>();
+            var trolley = rigComp != null ? rigComp.GetPivot(CraneAxis.TROLLEY_A) : null;
+            var loadWorld = trolley != null ? trolley.position : controller.transform.position;
+            var vp = rig.cam.WorldToViewportPoint(loadWorld);
             bool off = vp.z < 0 || vp.x < 0 || vp.x > 1 || vp.y < 0 || vp.y > 1;
             if (!off) return;
             float x = Mathf.Clamp(vp.x, 0.06f, 0.94f) * Screen.width;
