@@ -154,7 +154,7 @@ namespace YardAX.Viz
         // ── 메시 ──
         MeshFilter MakeQuad(string name, Color c, int order)
         {
-            var go = new GameObject(name);
+            var go = new GameObject(name) { layer = ProjectionCamera.OverlayLayer };
             go.transform.SetParent(_ground, false);
             var mf = go.AddComponent<MeshFilter>();
             mf.sharedMesh = new Mesh { name = name };
