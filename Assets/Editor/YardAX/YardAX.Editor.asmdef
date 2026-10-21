@@ -1,0 +1,6 @@
+{
+  "name": "YardAX.Editor",
+  "rootNamespace": "YardAX.EditorTools",
+  "references": ["YardAX"],
+  "includePlatforms": ["Editor"]
+}
